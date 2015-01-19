@@ -14,6 +14,8 @@
 		EBB8FAB11A6D838100E066D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB8FAB01A6D838100E066D8 /* Images.xcassets */; };
 		EBB8FAB41A6D838100E066D8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBB8FAB21A6D838100E066D8 /* LaunchScreen.xib */; };
 		EBB8FAC01A6D838100E066D8 /* TipCalcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB8FABF1A6D838100E066D8 /* TipCalcTests.m */; };
+		EBB8FACC1A6D83B800E066D8 /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB8FACA1A6D83B800E066D8 /* TipViewController.m */; };
+		EBB8FACD1A6D83B800E066D8 /* TipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBB8FACB1A6D83B800E066D8 /* TipViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		EBB8FAB91A6D838100E066D8 /* TipCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB8FABE1A6D838100E066D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBB8FABF1A6D838100E066D8 /* TipCalcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipCalcTests.m; sourceTree = "<group>"; };
+		EBB8FAC91A6D83B800E066D8 /* TipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
+		EBB8FACA1A6D83B800E066D8 /* TipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
+		EBB8FACB1A6D83B800E066D8 /* TipViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TipViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +94,9 @@
 				EBB8FAB01A6D838100E066D8 /* Images.xcassets */,
 				EBB8FAB21A6D838100E066D8 /* LaunchScreen.xib */,
 				EBB8FAA31A6D838100E066D8 /* Supporting Files */,
+				EBB8FAC91A6D83B800E066D8 /* TipViewController.h */,
+				EBB8FACA1A6D83B800E066D8 /* TipViewController.m */,
+				EBB8FACB1A6D83B800E066D8 /* TipViewController.xib */,
 			);
 			path = TipCalc;
 			sourceTree = "<group>";
@@ -201,6 +209,7 @@
 			files = (
 				EBB8FAAF1A6D838100E066D8 /* Main.storyboard in Resources */,
 				EBB8FAB41A6D838100E066D8 /* LaunchScreen.xib in Resources */,
+				EBB8FACD1A6D83B800E066D8 /* TipViewController.xib in Resources */,
 				EBB8FAB11A6D838100E066D8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +230,7 @@
 			files = (
 				EBB8FAAC1A6D838100E066D8 /* ViewController.m in Sources */,
 				EBB8FAA91A6D838100E066D8 /* AppDelegate.m in Sources */,
+				EBB8FACC1A6D83B800E066D8 /* TipViewController.m in Sources */,
 				EBB8FAA61A6D838100E066D8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,7 +353,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TipCalc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,7 +365,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TipCalc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
