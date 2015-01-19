@@ -75,25 +75,11 @@
     [self.navigationController pushViewController:[[SettingsViewController alloc] init] animated:YES];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    NSLog(@"view will appear");
-}
-
 - (void)viewDidAppear:(BOOL)animated {
-    NSLog(@"view did appear");
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     int newDefault = [defaults integerForKey:@"defaultIndex"];
-    NSLog(@"%d@", newDefault);
     self.tipControl.selectedSegmentIndex = newDefault;
     [self UpdateValues];
-}
-
-- (void)viewWillDisappear:(BOOL)animated {
-    NSLog(@"view will disappear");
-}
-
-- (void)viewDidDisappear:(BOOL)animated {
-    NSLog(@"view did disappear");
 }
 
 @end
