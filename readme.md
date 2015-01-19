@@ -1,10 +1,8 @@
-TipCalc: a simple iOS tip calculator
+###TipCalc
+This is a simple iOS tip calculator that accepts a bill amount and a percentage, then displays the tip amount and total bill amount.
 
-This is a demo application that accepts a bill amount and a percentage, then displays the tip amount and total bill amount.
+_Time spent:_ 2 hours
 
-Time spent: 2 hours
-
-Stories:
-[x] Basic tip calculator functionality
-[ ] Settings page
-[ ] Spruce it up a bit
+- [x] Basic tip calculator functionality
+- [x] Settings page with option for default tip percentage
+- [ ] Spruce it up a bit
